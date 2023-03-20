@@ -4,17 +4,15 @@ public class ex04 {
         Scanner e=new Scanner(System.in);
         System.out.println("Insira o valor de n");
         float n=e.nextFloat();
-        float cta=0;
-        System.out.println("Resultado: "+serie4(n,cta));
+        float divisor=n;
+        System.out.println("Resultado: "+serie4(n,divisor));
     }
-    public static float serie4(float num, float cta){
-        cta=cta+1;
-        System.out.println(cta);
+    public static float serie4(float num, float divisor){
         if(num!=1){
-            num=(num/cta)+serie4(num-1,cta);
+            num=(num/(divisor-(num-1)))+serie4(num-1,divisor);
             return num;
         }else{
-            return 1/cta;
+            return 1/divisor;
         }
     }
 }
