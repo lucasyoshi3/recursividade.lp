@@ -2,7 +2,7 @@ import java.util.*;
 public class ex05 {
     public static void main(String[] args){
         Scanner e=new Scanner(System.in);
-        System.out.println("Insira o valor de n: ");
+        System.out.println("insira o valor de n: ");
         int n=e.nextInt();
         int soma=0;
         int numeroMax=n;
